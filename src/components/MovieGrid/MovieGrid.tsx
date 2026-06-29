@@ -7,11 +7,8 @@ interface MovieGridProps {
 }
 
 export default function MovieGrid({ movies, onSelect }: MovieGridProps) {
-  // const onSelect = element => {};
-  // console.log(movies);
   return (
     <ul className={css.grid}>
-      {/* Набір елементів списку з фільмами */}
       {movies.map(movie => (
         <li key={movie.id}>
           <div className={css.card} onClick={() => onSelect(movie)}>
